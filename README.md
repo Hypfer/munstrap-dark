@@ -15,11 +15,13 @@ cd /etc/munin
 git clone https://github.com/Hypfer/munstrap-dark.git
 ```
 
-Replace the Munin stock template by Munstrap (don't worry, there is a backup of the old files):
+Configure Munin to look for templates and static files at the new location:
 
 ```
-cp -rb munstrap-dark/templates .
-cp -rb munstrap-dark/static .
+cat > /etc/munin/munin-conf.d/munstrap-dark.conf <<EOF
+tmpldir   /etc/munin/munstrap-dark/templates
+staticdir /etc/munin/munstrap-dark/static
+EOF
 ```
 
 Edit /usr/share/perl5/munin/master/GraphOld.pm (Path may vary) according to colors.patch (because I'm lazy)
@@ -43,22 +45,10 @@ cd /etc/munin/munstrap-dark
 git pull
 ```
 
-Replace the old version by the new one:
-
-```
-cd /etc/munin
-rm -rf templates static
-cp -r munstrap/templates .
-cp -r munstrap/static .
-```
-
 Revert to stock
 ---------------
 
 ```
-cd /etc/munin
-rm -rf templates static
-mv templates~ templates
-mv static~ static
+rm -rf /etc/munin/munin-conf.d/munstrap-dark.conf /etc/munin/munstrap-dark
 ```
 
