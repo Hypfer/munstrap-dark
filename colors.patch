@@ -5,7 +5,7 @@
 <             666600 FFBFFF 00FFCC CC6699 999900
 <             )];      # Line variations: Pure, earthy, dark pastel, misc colours
 ---
->         qw(FF1E00 FF7F00 00B6E1 00EB3E FF280B FF840B 11C6F0 0BF548 D11800 D16800 006981 009C29)];      # Line variations: Pure, earthy, dark pastel, misc colours
+>         qw(FF1E00 FF7F00 00B6E1 00EB3E 9300E5 FFFF00 A6FA00 EF0087 FF6700 00E2BC FFA200 FF280B FF840B 11C6F0 0BF548 D11800 D16800 006981 009C29)];      # Line variations: Pure, earthy, dark pastel, misc colours
 1668,1673c1664,1669
 < 		'--color',  'BACK#F0F0F0',   # Area around the graph
 < 		'--color',  'FRAME#F0F0F0',  # Line around legend spot
