@@ -22,11 +22,11 @@ img#zoom_image{
 
 .link-domain {
 	font-size: 1.4em;	
-	color: #1f1f1f;
+	color: #afafaf;
 }
 .link-host {
 	font-size: 1.1em;
-	color: #353333;
+	color: #efefef;
 }
 ul.groupview, ul.groupview ul {
 	list-style-type: none;
