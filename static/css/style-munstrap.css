@@ -1,5 +1,6 @@
 body{
   padding-top: 70px;
+  background-color:#161212;
 }
 
 img.i {
@@ -21,11 +22,11 @@ img#zoom_image{
 
 .link-domain {
 	font-size: 1.4em;	
-	color: #660066;
+	color: #1f1f1f;
 }
 .link-host {
 	font-size: 1.1em;
-	color: #800080;
+	color: #353333;
 }
 ul.groupview, ul.groupview ul {
 	list-style-type: none;
@@ -38,3 +39,33 @@ ul.groupview, ul.groupview ul {
    display: block;
    float: left;
 }
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: #2f2f2f;
+  border-radius: 4px;
+}
+.breadcrumb > li {
+  display: inline-block;
+  color: #ccc;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #efefef;
+  cursor: default;
+  background-color: #2f2f2f;
+  border: 1px solid #D11800;
+  border-bottom-color: transparent;
+}
+.nav-tabs {
+  border-bottom: 1px solid #D11800;
+}
+.well {
+  background-color: #2f2f2f;
+  border: 1px solid #D11800;
+  color: #efefef;
+}
+
+
