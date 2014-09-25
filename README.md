@@ -1,7 +1,7 @@
 Munstrap-dark
 ========
 
-Alternative Munin 2.x templates based on Twitter Bootstrap 3
+Alternative dark Munin 2.x templates based on Twitter Bootstrap 3
 
 ![Sample](sample.jpg)
 
@@ -18,8 +18,8 @@ git clone https://github.com/Hypfer/munstrap-dark.git
 Replace the Munin stock template by Munstrap (don't worry, there is a backup of the old files):
 
 ```
-cp -rb munstrap/templates .
-cp -rb munstrap/static .
+cp -rb munstrap-dark/templates .
+cp -rb munstrap-dark/static .
 ```
 
 Edit /usr/share/perl5/munin/master/GraphOld.pm (Path may vary) according to colors.patch (because I'm lazy)
@@ -62,7 +62,7 @@ Upgrades
 Get the last changes from Munstrap:
 
 ```
-cd /etc/munin/munstrap
+cd /etc/munin/munstrap-dark
 git pull
 ```
 
@@ -85,11 +85,3 @@ mv templates~ templates
 mv static~ static
 ```
 
-Samples
--------
-
-View of a specific node:
-![Node view](sample-node.jpg)
-
-Zoom feature:
-![Zoom view](sample-zoom.jpg)
